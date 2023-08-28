@@ -9,7 +9,7 @@ class Generator
     /**
      * Generate a new name for use in your applications.
      *
-     * @var string $delimiter
+     * @var string
      *
      * @return string
      */
@@ -17,8 +17,9 @@ class Generator
     {
         $prefix = $this->prefix[mt_rand(0, count($this->prefix) - 1)];
         $name = $this->names[mt_rand(0, count($this->names) - 1)];
-        
+
         $sections = [$prefix, $name];
-        return implode($delimiter, array_filter($sections));        
+
+        return implode($delimiter, array_filter($sections));
     }
 }

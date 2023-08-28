@@ -16,8 +16,13 @@
         "Srmklive\\Dockernator\\": "src/"
       }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Srmklive\\Dockernator\\Tests\\": "tests/"
+        }
+    },    
     "require": {
-        "php": ">=7.2|^8.0"
+        "php": "^8.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
